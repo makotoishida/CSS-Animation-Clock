@@ -1,0 +1,29 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hand {
+  transform-origin: center;
+}
+.hand.second {
+  rotate: var(--angleS);
+  animation: 60s rotation infinite linear;
+}
+.hand.minute {
+  rotate: var(--angleM);
+  animation: 3600s rotation infinite linear;
+}
+.hand.hour {
+  rotate: var(--angleH);
+  animation: 216000s rotation infinite linear;
+} 

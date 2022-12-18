@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CSS Animation Clock</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="clock">
+    <svg version="1.1" baseProfile="full" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100%" height="100%" fill="#ccc" />
+      <circle cx="150" cy="150" r="145" fill="#ffc" />
+      <circle cx="150" cy="150" r="6" fill="#444" />
+      <text x="150" y="40" font-size="34" text-anchor="middle" fill="#666">12</text>
+      <text x="275" y="160" font-size="34" text-anchor="middle" fill="#666">3</text>
+      <text x="150" y="280" font-size="34" text-anchor="middle" fill="#666">6</text>
+      <text x="30" y="160" font-size="34" text-anchor="middle" fill="#666">9</text>
+
+      <polygon points="140,150 160,150 152,60 148,60" class="hour hand" />
+      <polygon points="145,150 155,150 151,30 149,30" fill="#00f" class="minute hand" />
+      <polygon points="148,150 152,150 150,25 150,25" fill="#f00" class="second hand" />
+    </svg>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
